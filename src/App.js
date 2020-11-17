@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BrowserRouter as Router , Switch ,  Route  } from 'react-router-dom';
+import { HashRouter as Router , Switch ,  Route  } from 'react-router-dom';
 
 // import logo from './logo.svg';
 import './App.css';
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Switch>
           {/* <Route exact path="/" component={Loadingpage} /> */}
-          <Route exact path="/resume_2020" component={HomePage} />
+          <Route exact path="/" component={HomePage} />
         </Switch>
       </Router>
 
