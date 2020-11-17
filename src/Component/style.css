@@ -1,0 +1,212 @@
+.navbarItems {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    z-index: 100;
+}
+
+.sticky {
+    position: fixed;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    /* animation: slidebar 0.3s ease; */
+}
+
+@keyframes slidebar {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 80px;
+    }
+}
+
+
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-react {
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    text-decoration: none;
+    color: #fff;
+    /* background-color: red; */
+  }
+
+  .nav-item:hover {
+      background-color: rgb(35, 252, 82);
+      text-decoration: none;
+      color: yellow;
+  }
+
+
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Home page */
+.App-header-homepage {
+    background-color: #282c34;
+    /* padding-top: 80px; */
+    min-height: 100vh;
+}
+
+.name-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    height: 300px;
+}
+
+.first-name {
+    font-size: calc(20px + 2vmin);
+}
+
+.last-name {
+    font-size: calc(20px + 2vmin);
+}
+
+.Profile-image {
+    /* width: 50vw; */
+    height:50vh;
+}
+
+.about-me-text {
+    color: white;
+}
+
+/* test - rippon */
+
+
+#plant-ribbon-container {
+    position: absolute;
+    width: 1200px;
+    height: 40px;
+    bottom: 70%
+}
+
+#plant-ribbon-1 {
+    left: 196px
+}
+
+.plant-ribbon-left {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 40px;
+    margin-right: -1px;
+    background-image: url(../Image/plant-ribbon-left.png)
+}
+
+.plant-ribbon-middle {
+    position: relative;
+    float: left;
+    height: 40px;
+    padding-top: 6px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #f7941d;
+    font-family: frankfurter-plain;
+    color: #fff;
+    font-size: 24px
+}
+
+.plant-ribbon-right {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 40px;
+    margin-left: -1px;
+    background-image: url(../Image/plant-ribbon-right.png)
+}
+
+/* Skill page */
+.App-header-skillpage {
+    background-color: #a0b9ec;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+
+/* Contact page */
+.App-contact-header {
+    background-color: #3c70d8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.footer {
+    position: relative;
+}
+
+.footer p {
+    color: #ffffff;
+    bottom: 0;
+    position: absolute;
+
+}
+ 
+
+  /* for mobile width 768px  */
+@media screen and (max-width: 768px) {
+    .Profile-image {
+        /* width: 50vw; */
+        height:20vh;
+    }
+}
+
+
+  /* for ipad pro width 1024px  */
+@media screen and (max-width: 1024px) {
+    .Profile-image {
+        /* width: 50vw; */
+        height:20vh;
+    }
+}
+

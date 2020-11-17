@@ -1,0 +1,311 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?-9haulc');
+	src:url('https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.eot?#iefix-9haulc') format('embedded-opentype'),
+		url('https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.woff?-9haulc') format('woff'),
+		url('https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.ttf?-9haulc') format('truetype'),
+		url('https://s3.amazonaws.com/icomoon.io/4/Loading/icomoon.svg?-9haulc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	/* speak: none; */
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+    line-height: 1;
+    
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spinner:before {
+	content: "\e000";
+}
+.icon-spinner-2:before {
+	content: "\e001";
+}
+.icon-spinner-3:before {
+	content: "\e002";
+}
+.icon-spinner-4:before {
+	content: "\e003";
+}
+.icon-spinner-5:before {
+	content: "\e004";
+}
+.icon-spinner-6:before {
+	content: "\e005";
+}
+.icon-spinner-7:before {
+	content: "\e006";
+}
+
+@keyframes anim-rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.spinner {
+	display: inline-block;
+	font-size:6em;
+	height: 1em;
+	line-height: 1;
+	margin: .5em;
+	animation: anim-rotate 2s infinite linear;
+	color: #fff;
+  text-shadow: 0 0 .25em rgba(255,255,255, .3);
+}
+.spinner--steps {
+	animation: anim-rotate 1s infinite steps(8);
+}
+.spinner--steps2 {
+	animation: anim-rotate 1s infinite steps(12);
+}
+
+body {
+	/* font-family: sans-serif;
+	color: rgb(94, 26, 26);
+	line-height: 1.5;
+	font-size: 1em; */
+	background: #d16ac0;
+}
+.talign-center {
+    min-height: 100vh;
+    /* text-align: center; */
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    z-index: 100;
+    width: 100%;
+
+}
+
+
+/* sakura fall */
+
+.parent {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 1000px;
+  z-index: 50;
+}
+
+.petal {
+  margin: 1px;
+  animation: fall1 10s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: #fe85c0;
+  width: 15px;
+  height: 15px;
+  box-shadow: inset 5px 5px 8px -5px #fff;
+  border-radius: 15px 5px 15px 0px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.petal::after {
+  content: "";
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #db0637;
+  border-radius: 15px 5px 15px 0px;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.petal:nth-child(2) {
+  animation-name: fall2;
+  animation-delay: 1.25s;
+  top: 10%;
+}
+.petal:nth-child(3) {
+  animation-name: fall3;
+  animation-delay: 3.65s;
+  top: 25%;
+}
+.petal:nth-child(4) {
+  animation-name: fall4;
+  animation-delay: 8.15s;
+  top: 30%;
+}
+.petal:nth-child(5) {
+  animation-name: fall5;
+  animation-delay: 5.35s;
+  top: 50%;
+}
+.petal:nth-child(6) {
+  animation-name: fall6;
+  animation-delay: 1.25s;
+  top: 75%;
+}
+
+.petal:nth-child(7) {
+  animation-name: fall2;
+  animation-delay: 9.25s;
+  top: 10%;
+}
+.petal:nth-child(8) {
+  animation-name: fall3;
+  animation-delay: 2.65s;
+  top: 25%;
+}
+.petal:nth-child(9) {
+  animation-name: fall4;
+  animation-delay: 0.15s;
+  top: 30%;
+}
+.petal:nth-child(10) {
+  animation-name: fall5;
+  animation-delay: 1.25s;
+  top: 50%;
+}
+.petal:nth-child(11) {
+  animation-name: fall6;
+  animation-delay: 0.25s;
+  top: 75%;
+}
+
+.petal:nth-child(12) {
+  animation-name: fall6;
+  animation-delay: 1.75s;
+  top: 85%;
+}
+.petal:nth-child(13) {
+    animation-name: fall6;
+    animation-delay: 1.75s;
+    top: 90%;
+  }
+
+@keyframes fall1 {
+  to {
+    transform: translateY(200px) translateX(2560px) translateZ(200px)
+      rotate3d(1, 0.25, 0, 320deg);
+  }
+}
+
+@keyframes fall2 {
+  to {
+    transform: translateY(150px) translateX(2560px) translateZ(500px)
+      rotate3d(1, 0.25, 0.25, 220deg);
+  }
+}
+
+@keyframes fall3 {
+  to {
+    transform: translateY(150px) translateX(2560px) translateZ(300px)
+      rotate3d(0.25, 1, 1, 420deg);
+  }
+}
+
+@keyframes fall4 {
+  to {
+    transform: translateY(-160px) translateX(2560px) translateZ(-500px)
+      rotate3d(1, 1, 0.25, 720deg);
+  }
+}
+
+@keyframes fall5 {
+  to {
+    transform: translateY(-200px) translateX(2560px) translateZ(400px)
+      rotate3d(0.25, 1, 0.25, 820deg);
+  }
+}
+
+@keyframes fall6 {
+  to {
+    transform: translateY(-300px) translateX(2560px) translateZ(-100px)
+      rotate3d(1, 1, 1, 720deg);
+  }
+}
+@keyframes fall6 {
+    to {
+      transform: translateY(-320px) translateX(2560px) translateZ(-300px)
+        rotate3d(1, 1, 1, 720deg);
+    }
+  }
+
+
+.btn-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Door */
+.door-wall{
+  /* position: fixed; */
+ 
+  display: flex;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.door-img {
+  height: 100vh;
+}
+
+.left-door-img{
+  position: relative;
+  left: 0vw;
+}
+
+.right-door-img{
+  position: relative;
+  left: 0vw;
+  transform: scaleX(-1);
+}
+
+.wall-img {
+  height: 100vh;
+}
+
+.left-wall-img{
+  position: absolute;
+  left: -10vw;
+  top: 0vh;
+
+}
+
+.right-wall-img{
+  /* position: relative; */
+  transform: scaleX(-1);
+}
+
+/* animation door and wall */
+.move-door {
+  animation: move-left 0.5s ease-in;
+}
+
+@keyframes move-left {
+  0% { 
+    left: 10vw;
+    top: 0vh;
+  }
+  100%{ 
+    left: -20vw;
+    top: 0vh;
+  }
+}
