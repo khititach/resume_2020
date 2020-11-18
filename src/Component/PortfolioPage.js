@@ -74,11 +74,11 @@ class PortfolioPage extends React.Component {
                     {DataEn.Portfolio.Project.image.studentImage.map((item,index) => {
                         if (index !== 0) {
                             return(
-                                <div key={index}>
+                                // <div key={index}>
                                     <div key={index} className="carousel-item">
                                         <img src={item} alt="alt2" key={index} className="role-image" />
                                     </div>
-                                </div>
+                                // </div>
                             )
                         }  
                     })}
@@ -110,11 +110,11 @@ class PortfolioPage extends React.Component {
                     {DataEn.Portfolio.Project.image.adminImage.map((item,index) => {
                         if (index !== 0) {
                             return(
-                                <div key={index}>
+                                // <div key={index}>
                                     <div key={index} className="carousel-item">
                                         <img src={item} alt="alt2" key={index} className="role-image" />
                                     </div>
-                                </div>
+                                // </div>
                             )
                         }  
                     })}
@@ -146,11 +146,11 @@ class PortfolioPage extends React.Component {
                     {DataEn.Portfolio.Project.image.storeImage.map((item,index) => {
                         if (index !== 0) {
                             return(
-                                <div key={index}>
+                                // <div key={index}>
                                     <div key={index} className="carousel-item">
                                         <img src={item} alt="alt2" key={index} className="role-image" />
                                     </div>
-                                </div>
+                                // </div>
                             )
                         }  
                     })}
